@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		86245E7E28E1EDA700ECAB95 /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86245E7D28E1EDA700ECAB95 /* CeldaPeliculaController.swift */; };
+		86245E8028E1FD3800ECAB95 /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86245E7F28E1FD3800ECAB95 /* DetallesPeliculaController.swift */; };
 		865113BA28DDF7DC00959303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865113B928DDF7DC00959303 /* AppDelegate.swift */; };
 		865113BC28DDF7DC00959303 /* PeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865113BB28DDF7DC00959303 /* PeliculasController.swift */; };
 		865113BF28DDF7DC00959303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865113BD28DDF7DC00959303 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		86245E7D28E1EDA700ECAB95 /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
+		86245E7F28E1FD3800ECAB95 /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
 		865113B628DDF7DC00959303 /* tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865113B928DDF7DC00959303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865113BB28DDF7DC00959303 /* PeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				865113BB28DDF7DC00959303 /* PeliculasController.swift */,
 				86245E7D28E1EDA700ECAB95 /* CeldaPeliculaController.swift */,
+				86245E7F28E1FD3800ECAB95 /* DetallesPeliculaController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				865113CC28DDFB4900959303 /* Pelicula.swift in Sources */,
 				865113BC28DDF7DC00959303 /* PeliculasController.swift in Sources */,
 				865113BA28DDF7DC00959303 /* AppDelegate.swift in Sources */,
+				86245E8028E1FD3800ECAB95 /* DetallesPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
