@@ -10,6 +10,7 @@ import UIKit
 
 class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tvPeliculas: UITableView!
     var peliculas : [Pelicula] = []
     
     override func viewDidLoad() {
@@ -18,6 +19,13 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
         peliculas.append(Pelicula(titulo: "Titanic", año: "1997", director: "James Cameron", genero: "Drama"))
         peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los monstruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
         peliculas.append(Pelicula(titulo: "Vacaciones de terror", año: "1989", director: "Rene Cardona", genero: "Terror"))
+        
+        peliculas[0].personajes.append(Personaje(nombre: "Jack Dawson", interprete: "Leonardo DiCaprio"))
+        peliculas[0].personajes.append(Personaje(nombre: "Rose", interprete: "Kate Winslet"))
+        peliculas[1].personajes.append(Personaje(nombre: "Chabelo", interprete: "Xavier López"))
+        peliculas[1].personajes.append(Personaje(nombre: "Pepito", interprete: "Martín Ramos"))
+        peliculas[2].personajes.append(Personaje(nombre: "Julio", interprete: "Pedro Fernandez"))
+        peliculas[2].personajes.append(Personaje(nombre: "Paulina", interprete: "Gabriela Hassel"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +52,7 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! DetallesPeliculaController
-        destino.pelicula = peliculas[0]
+        destino.pelicula = peliculas[tvPeliculas.indexPathForSelectedRow!.row]
     }
 
 }
